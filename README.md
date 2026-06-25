@@ -16,7 +16,7 @@ markdown
 
 ### 1. 克隆项目
 
-```bash
+bash
 git clone https://github.com/sunwencheng5/blog-vue-frontend.git
 cd blog-vue-frontend
 2. 安装依赖
