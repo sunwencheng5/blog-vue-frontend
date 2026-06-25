@@ -70,14 +70,3 @@ License
 text
 
 ---
-
-## 如何使用
-
-1. 将上述内容完整复制
-2. 在项目根目录下创建或覆盖 `README.md` 文件
-3. 提交并推送：
-
-```bash
-git add README.md
-git commit -m "docs: 完善 README 文档"
-git push origin main
