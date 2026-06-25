@@ -18,10 +18,15 @@ markdown
 
 bash
 git clone https://github.com/sunwencheng5/blog-vue-frontend.git
+
 cd blog-vue-frontend
+
 2. 安装依赖
+
 bash
+
 npm install
+
 3. 配置后端接口
 在 src 目录下创建或修改环境变量文件（如 .env.development），配置后端 API 地址：
 
