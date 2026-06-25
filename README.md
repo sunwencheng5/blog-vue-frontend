@@ -12,29 +12,6 @@ markdown
 - **Axios** - HTTP 请求库（如使用）
 - **ESLint** - 代码规范检查
 
-## 项目结构
-blog-vue-frontend/
-├── .vscode/ # VS Code 配置
-├── public/ # 静态资源（不经过构建）
-├── src/
-│ ├── assets/ # 静态资源（经过构建）
-│ ├── components/ # 公共组件
-│ ├── views/ # 页面视图
-│ ├── router/ # 路由配置
-│ ├── store/ # Pinia 状态管理（如使用）
-│ ├── utils/ # 工具函数
-│ ├── api/ # API 请求封装
-│ ├── App.vue # 根组件
-│ └── main.js # 入口文件
-├── .editorconfig # 编辑器配置
-├── .gitattributes # Git 属性配置
-├── index.html # HTML 模板
-├── package.json # 项目依赖
-├── vite.config.js # Vite 配置
-└── README.md # 项目说明
-
-text
-
 ## 快速开始
 
 ### 1. 克隆项目
