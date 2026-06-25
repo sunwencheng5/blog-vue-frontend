@@ -1,44 +1,101 @@
-# blog-vue-2
+markdown
+# Blog Vue Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+基于 Vue 3 + Vite 的博客系统前端项目，提供文章展示、分类浏览、用户交互等前端界面。
 
-## Recommended VS Code Setup
+## 技术栈
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Vue 3** - 渐进式 JavaScript 框架
+- **Vite** - 下一代前端构建工具
+- **Vue Router** - 官方路由管理器
+- **Pinia** - Vue 状态管理库（如使用）
+- **Axios** - HTTP 请求库（如使用）
+- **ESLint** - 代码规范检查
 
-## Recommended Browser Setup
+## 项目结构
+blog-vue-frontend/
+├── .vscode/ # VS Code 配置
+├── public/ # 静态资源（不经过构建）
+├── src/
+│ ├── assets/ # 静态资源（经过构建）
+│ ├── components/ # 公共组件
+│ ├── views/ # 页面视图
+│ ├── router/ # 路由配置
+│ ├── store/ # Pinia 状态管理（如使用）
+│ ├── utils/ # 工具函数
+│ ├── api/ # API 请求封装
+│ ├── App.vue # 根组件
+│ └── main.js # 入口文件
+├── .editorconfig # 编辑器配置
+├── .gitattributes # Git 属性配置
+├── index.html # HTML 模板
+├── package.json # 项目依赖
+├── vite.config.js # Vite 配置
+└── README.md # 项目说明
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+text
 
-## Customize configuration
+## 快速开始
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### 1. 克隆项目
 
-## Project Setup
-
-```sh
+```bash
+git clone https://github.com/sunwencheng5/blog-vue-frontend.git
+cd blog-vue-frontend
+2. 安装依赖
+bash
 npm install
-```
+3. 配置后端接口
+在 src 目录下创建或修改环境变量文件（如 .env.development），配置后端 API 地址：
 
-### Compile and Hot-Reload for Development
+env
+VITE_API_BASE_URL=http://localhost:8080/api
+具体配置方式请参考项目中的 vite.config.js 或相关配置文件。
 
-```sh
+4. 启动开发服务器
+bash
 npm run dev
-```
+项目将在本地启动，默认地址为 http://localhost:5173。
 
-### Compile and Minify for Production
-
-```sh
+5. 构建生产版本
+bash
 npm run build
-```
+构建产物将输出到 dist 目录。
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
+6. 代码检查
+bash
 npm run lint
-```
+脚本说明
+命令	说明
+npm run dev	启动开发服务器（热重载）
+npm run build	构建生产环境代码
+npm run preview	预览生产构建结果
+npm run lint	运行 ESLint 代码检查
+环境要求
+Node.js 16.0 及以上
+
+npm 7.0 及以上 或 pnpm / yarn
+
+相关仓库
+后端服务：blog-server-Backend
+
+贡献
+欢迎提交 Issue 和 Pull Request。
+
+License
+暂无
+
+text
+
+---
+
+## 如何使用
+
+1. 将上述内容完整复制
+2. 在项目根目录下创建或覆盖 `README.md` 文件
+3. 提交并推送：
+
+```bash
+git add README.md
+git commit -m "docs: 完善 README 文档"
+git push origin main
